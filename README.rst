@@ -4,12 +4,21 @@ A python package for memo. Memo is  an on-chain social network built on Bitcoin 
 
 Based on `bitcash`_.
 
+Installation
+------------
+
+
+.. code-block:: bash
+
+    $ pip install bchmemo
 
 How to use
 ------------------
 
 .. code-block:: python
 
+    >>> from bchmemo import MemoUser
+    
     >>> user = MemoUser('bitcoincash:qqplzy4l2uxzwa5k3zc2mftkw3q6340a4cfy4kd3nf')
     >>> user.private_key = 'PRIVATEKEY'
 
@@ -41,13 +50,7 @@ How to use
 
 If you want to generate private keys, you can use `bitcash`_ from sporestack
 
-Installation
-------------
 
-
-.. code-block:: bash
-
-    $ pip install bchmemo
 
 
 Credits
