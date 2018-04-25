@@ -1,4 +1,4 @@
-Memo
+BCHmemo
 =======================
 A python package for memo. Memo is  an on-chain social network built on Bitcoin Cash
 
