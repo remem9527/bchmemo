@@ -2,7 +2,7 @@ BCHmemo
 =======================
 A python package for memo. Memo is  an on-chain social network built on Bitcoin Cash
 
-Memo's oringal website: htttp://memo.cash
+Memo's original website: htttp://memo.cash
 
 You can easily send and read memo with BCHmemo. Data are get and sent by network API.
 
