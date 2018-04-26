@@ -1,18 +1,36 @@
 BCHmemo
 =======================
-A python package for memo. Memo is  an on-chain social network built on Bitcoin Cash.
+A python package for memo. Memo is  an on-chain social network built on Bitcoin Cash
+
+Memo's oringal website: htttp://memo.cash
 
 You can easily send and read memo with BCHmemo. Data are get and sent by network API.
 
 Based on `bitcash`_.
 
 Installation
-------------
-
-
-.. code-block:: bash
-
+------------------
+.. code-block:: batch
+    
     $ pip install bchmemo
+
+V0.0.3
+------------------
+Action of "reply to memo" supported
+
+.. code-block:: python
+
+    >>> user = MemoUser('bitcoincash:qqplzy4l2uxzwa5k3zc2mftkw3q6340a4cfy4kd3nf')
+    >>> user.private_key = 'PRIVATEKEY'
+    >>> user.reply_to_memo('b2d072076b4eb462341775792e769a1eecf085091567ad15f18c3ec7fd3a3401','reply test')
+    Successfully sent! txid=21083c0730b25f8cb0831e76db1cf099d30ea811079e05a2bcb8b63fe3770913
+    Check it on: https://explorer.bitcoin.com/bch/tx/21083c0730b25f8cb0831e76db1cf099d30ea811079e05a2bcb8b63fe3770913
+
+    >>> user.get_memos()
+    >>> user.list_replies()
+    bchmemo V0.0.3 (a Python package)@...4kd3nf replied to memo(b2d072076b4eb462341775792e769a1eecf085091567ad15f18c3ec7fd3a3401) at 2018-04-26 14:12:00
+    reply test
+
 
 How to use
 ------------------
@@ -20,7 +38,7 @@ How to use
 .. code-block:: python
 
     >>> from bchmemo import MemoUser
-    
+
     >>> user = MemoUser('bitcoincash:qqplzy4l2uxzwa5k3zc2mftkw3q6340a4cfy4kd3nf')
     >>> user.private_key = 'PRIVATEKEY'
 
@@ -51,8 +69,6 @@ How to use
     3qcn80 bitcoincash:qzdxp2z5yuxzlskafh2d8wsq7grg7rt46csg3qcn80
 
 If you want to generate private keys, you can use `bitcash`_ from sporestack
-
-
 
 
 Credits
