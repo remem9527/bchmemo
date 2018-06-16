@@ -44,7 +44,7 @@ How to use
 
     >>> user.set_name('Test User For Python Package')
     Successfully sent! txid=d8c9d05ffefd5211353b3ef7b47ede424d3b78f7f1a4911d5d8792ae35072c04
-    Check it on: https://explorer.bitcoin.com/bch/tx/txid=d8c9d05ffefd5211353b3ef7b47ede424d3b78f7f1a4911d5d8792ae35072c04
+    Check it on: https://explorer.bitcoin.com/bch/tx/d8c9d05ffefd5211353b3ef7b47ede424d3b78f7f1a4911d5d8792ae35072c04
 
     >>>user.post_memo('First memo from python package!')
     Successfully sent! txid=1f84551778197aae7ea82dced737d4ef644b9517e91cc867a354a1aad55f9b09
