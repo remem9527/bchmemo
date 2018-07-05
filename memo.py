@@ -160,8 +160,8 @@ class Memo:
     def name(self,name):
         if not isinstance(name,str):
             raise TypeError('name should be a string!')
-        if len(name)>75:
-            raise ValueError('"{}" is too long.Max length of memo name is 75 bytes',name)
+        if len(name)>217:
+            raise ValueError('"{}" is too long.Max length of memo name is 217 bytes',name)
         else:
             self._name=name
 
@@ -173,8 +173,8 @@ class Memo:
     def message(self, message):
         if not isinstance(message,str):
             raise TypeError('message should be a string!')
-        if len(message)>76:
-            raise ValueError('"{}" is too long.Max length of memo message is 76 bytes',message)
+        if len(message)>217:
+            raise ValueError('"{}" is too long.Max length of memo message is 217 bytes',message)
         else:
             self._message=message
 
